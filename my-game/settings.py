@@ -2,7 +2,7 @@
 import math
 
 RES = WIDTH, HEIGHT = 1600, 900
-FPS = 60
+FPS = 240
 
 PLAYER_POS = 2, 2
 PLAYER_ANGLE = 0
