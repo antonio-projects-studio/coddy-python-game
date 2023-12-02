@@ -3,7 +3,7 @@ import sys
 from settings import *
 from map import *
 from player import *
-from raycasting import *
+# from raycasting import *
 from npc_control import *
 from pathfinding import *
 from finish import *
@@ -24,7 +24,7 @@ class Game:
 
     def new_game(self):
         self.delta_time = self.clock.tick(FPS)
-        self.raycasting = RayCasting(self)
+        # self.raycasting = RayCasting(self)
         self.map = Map(self)
         self.player = Player(self)
         self.textures = Textures(self)
@@ -33,7 +33,7 @@ class Game:
         self.pathfinding = PathFinding(self)
 
     def update(self):
-        self.raycasting.update()
+        # self.raycasting.update()
         pg.display.flip()
         self.player.update()
         self.delta_time = self.clock.tick(FPS)

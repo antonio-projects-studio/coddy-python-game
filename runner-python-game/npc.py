@@ -58,7 +58,7 @@ class NPC():
         y_p = self.player.y
         len = ((x_p - self.x) ** 2 + (y_p - self.y) ** 2)
 
-        # pg.draw.rect(self.game.screen, 'blue', (100 * next_x, 100 * next_y, 100, 100))
+        pg.draw.rect(self.game.screen, 'blue', (100 * next_x, 100 * next_y, 100, 100))
         if next_pos not in self.game.npc_control.npc_positions:
             self.check_wall_collision(dx, dy)
         elif len <= DIAGONAL:
